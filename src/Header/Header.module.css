@@ -1,0 +1,10 @@
+.container {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.allTasks {
+    display: flex;
+    justify-content: center;
+}
+
+.tasks {}
