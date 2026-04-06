@@ -1,9 +1,0 @@
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 25px;
-    list-style-type: none;
-    place-items: center;
-}
