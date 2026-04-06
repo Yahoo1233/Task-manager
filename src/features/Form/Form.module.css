@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;600;700&display=swap');
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 400px;
+    padding: 40px;
+}
+
+.containerInput {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+
+.taskText,
+.timeText,
+.hashtagText,
+.description {
+    font-size: 14px;
+    font-weight: 600;
+    color: #9E78CF;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+
+.taskInput,
+.timeInput,
+.hashtagInput {
+    height: 48px;
+    width: 100%;
+    background: linear-gradient(135deg, #0D0714 0%, #15101C 100%);
+    border: 2px solid #3E1671;
+    border-radius: 12px;
+    padding: 0 16px;
+    font-size: 16px;
+    color: #FFFFFF;
+    transition: all 0.3s ease;
+    font-family: 'Lato', sans-serif;
+}
+
+input:focus {
+    outline: none;
+    border-color: #9E78CF;
+    box-shadow: 0 0 0 3px rgba(158, 120, 207, 0.2);
+    background: #0D0714;
+}
+
+input:hover {
+    border-color: #9E78CF;
+}
+
+.descriptionInput {
+    resize: none;
+    width: 100%;
+    min-height: 120px;
+    background: linear-gradient(135deg, #0D0714 0%, #15101C 100%);
+    border: 2px solid #3E1671;
+    border-radius: 12px;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    padding: 12px 16px;
+    transition: all 0.3s ease;
+}
+
+.descriptionInput:focus {
+    outline: none;
+    border-color: #9E78CF;
+    box-shadow: 0 0 0 3px rgba(158, 120, 207, 0.2);
+}
+
+.descriptionInput:hover {
+    border-color: #9E78CF;
+}
+
+.checkboxContainer {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 8px;
+    padding: 16px;
+    background: rgba(62, 22, 113, 0.1);
+    border-radius: 12px;
+    justify-content: center;
+}
+
+.checkboxContainer label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.inputPriority {
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    background: linear-gradient(135deg, #0D0714 0%, #15101C 100%);
+    border: 2px solid #3E1671;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+.inputPriority:hover {
+    border-color: #9E78CF;
+    transform: scale(1.05);
+}
+
+.inputPriority:checked {
+    background: linear-gradient(135deg, #3E1671 0%, #5E2A9E 100%);
+    border-color: #9E78CF;
+}
+
+.inputPriority:checked::after {
+    content: '✓';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.selectContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 8px;
+    padding: 16px;
+    background: rgba(62, 22, 113, 0.1);
+    border-radius: 12px;
+}
+
+.selectContainer label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+.select {
+    flex: 1;
+    background: rgb(0, 0, 0);
+    border: 2px solid #3E1671;
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Lato', sans-serif;
+}
+
+.select:focus {
+    outline: none;
+    border-color: #9E78CF;
+    box-shadow: 0 0 0 3px rgba(158, 120, 207, 0.2);
+}
+
+.select:hover {
+    border-color: #9E78CF;
+}
+
+.button {
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    background: linear-gradient(135deg, #3E1671 0%, #5E2A9E 100%);
+    padding: 14px 32px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 24px;
+    width: 100%;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 12px rgba(62, 22, 113, 0.3);
+}
+
+.button:hover {
+    background: linear-gradient(135deg, #9E78CF 0%, #7A5AB3 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(158, 120, 207, 0.4);
+}
+
+.button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 8px rgba(62, 22, 113, 0.3);
+}

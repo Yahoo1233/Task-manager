@@ -1,0 +1,26 @@
+.container {
+    font-family: inherit, sans-serif;
+    background-color: #0D0714;
+    width: 100%;
+    height: 100%;
+}
+
+.addTaskBtn {
+    color: #FFFFFF;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 25px;
+    background-color: #3E1671;
+}
+
+.addTaskBtn:hover {
+    background-color: #9E78CF;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.addTaskBtn:active {
+    background-color: #3E1671;
+    color: #FFFFFF;
+}

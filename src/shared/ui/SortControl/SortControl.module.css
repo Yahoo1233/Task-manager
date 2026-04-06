@@ -1,0 +1,14 @@
+.filterContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    color: white;
+}
+
+.select {
+    border-color: #3E1671;
+    background-color: #15101C;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 15px;
+}
